@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mannschaften – T.C. Philathlos München e.V.</title>
+<meta name="description" content="Tennisverein T.C. Philathlos München e.V., gegründet 1995. Fünf Sandplätze am Föhringer Ring 5 bei der Beach-Arena, U6 Studentenstadt. Tennisschule, Beachsport, keine Aufnahmegebühr.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <div class="util">
+      <a href="tel:+498932210100">Club-Telefon 089 32210100</a>
+      <a href="mailto:tc@philathlos.de">E-Mail</a>
+      <a href="index.html#kontakt">Anfahrt</a>
+    </div>
+    <div class="bar">
+      <div class="navs">
+        <nav class="nav l" aria-label="Hauptnavigation links">
+          <a href="verein.html">Verein &amp; Anlage</a>
+          <a href="tennisschule.html">Tennisschule</a>
+          <a href="mannschaften.html" aria-current="page">Mannschaften</a>
+        </nav>
+        <nav class="nav r" aria-label="Hauptnavigation rechts">
+          <a href="mitgliedschaft.html">Mitgliedschaft</a>
+          <a href="index.html#aktuelles">Aktuelles</a>
+          <a href="index.html#kontakt">Kontakt</a>
+        </nav>
+      </div>
+      <a class="badge" href="index.html" aria-label="T.C. Philathlos München – Startseite">
+        <img src="img/logo.jpg" width="160" height="158" alt="Logo T.C. Philathlos München">
+      </a>
+      <button class="menu" aria-expanded="false">Menü</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="page-hero"><img src="img/anlage-training.jpg" width="798" height="478" alt="Training auf der Anlage"></div>
+<section class="page-title center">
+  <div class="wrap">
+    <h1>Mannschaften</h1>
+    <p class="lead">Spielbetrieb auf der Tennisanlage bei der Beach-Arena</p>
+  </div>
+</section>
+<section class="sec plain">
+  <div class="wrap">
+    <table>
+      <thead><tr><th>Mannschaft</th><th>Liga</th></tr></thead>
+      <tbody>
+        <tr><td>Herren</td><td class="ph">Liga / Spielplan</td></tr>
+        <tr><td>Herren 30</td><td class="ph">Liga / Spielplan</td></tr>
+        <tr><td>Herren 50</td><td class="ph">Liga / Spielplan</td></tr>
+        <tr><td>Juniorinnen</td><td class="ph">Liga / Spielplan</td></tr>
+        <tr><td>Junioren</td><td class="ph">Liga / Spielplan</td></tr>
+        <tr><td>Knaben</td><td class="ph">Liga / Spielplan</td></tr>
+        <tr><td>Bambino</td><td class="ph">Liga / Spielplan</td></tr>
+        <tr><td>Kleinfeldtennis</td><td class="ph">Liga / Spielplan</td></tr>
+      </tbody>
+    </table>
+    <p class="small center" style="margin-top:10px"><span class="ph">Stand Spieljahr 2014 laut bisheriger Website, aktuelle Mannschaften, Ligen und Links zu den BTV-Spielplänen ergänzen</span></p>
+    <div class="teams">
+      <h3>Mitspielen</h3>
+      <p>Für talentierte Kinder gibt es verschiedene Fördermaßnahmen. Wer in einer Mannschaft spielen möchte, meldet sich bei Christos unter <a href="tel:+491729138965">0172 9138965</a>.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="main">
+    <div class="foot-logo"><img src="img/logo.jpg" width="160" height="158" alt=""></div>
+    <div class="wrap">
+      <b>T.C. Philathlos München e.V.</b>
+      <p>Föhringer Ring 5 · 80805 München · <a href="https://www.openstreetmap.org/search?query=F%C3%B6hringer%20Ring%205%2C%2080805%20M%C3%BCnchen" rel="noopener">Route planen</a></p>
+      <p>Telefon: <a href="tel:+498932210100">089 32210100</a> · Fax: 089 32210101 · <a href="mailto:tc@philathlos.de">tc@philathlos.de</a></p>
+    </div>
+  </div>
+  <div class="foot-links">
+    <a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="index.html#kontakt">Kontakt</a>
+  </div>
+</footer>
+
+<script>
+(function(){var h=document.querySelector('.site-head'),b=h.querySelector('.menu');
+b.addEventListener('click',function(){var o=h.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'Schließen':'Menü'});
+h.querySelectorAll('.nav a').forEach(function(a){a.addEventListener('click',function(){h.classList.remove('open');b.setAttribute('aria-expanded','false');b.textContent='Menü'})});
+var links=[].slice.call(h.querySelectorAll('.nav a[href^="#"]'));
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){l.setAttribute('aria-current',l.getAttribute('href')==='#'+e.target.id?'true':'false')})}})},{rootMargin:'-45% 0px -50% 0px'});
+links.forEach(function(l){var s=document.querySelector(l.getAttribute('href'));if(s)io.observe(s)})}
+})();
+</script>
+</body>
+</html>
